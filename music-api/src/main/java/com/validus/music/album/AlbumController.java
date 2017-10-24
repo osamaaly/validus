@@ -35,7 +35,7 @@ public class AlbumController {
 		albumService.addAlbum(album);
 	}
 	
-	@PutMapping("artists/{artistId}/albums/{id}}")
+	@PutMapping("artists/{artistId}/albums/{id}")
 	public void updateAlbum (@RequestBody Album album, @PathVariable Long artistId, @PathVariable Long id) {
 		album.setArtist(new Artist(artistId, null, null, ""));
 		albumService.updateAlbum(album);
