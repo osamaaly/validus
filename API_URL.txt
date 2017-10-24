@@ -1,0 +1,62 @@
+
+Artist Resource CRUD Operations:
+================================
+
+1- createArtist
+	POST http://localhost:8080:artists
+	{"id": 1, "name": "artist-1"}
+	
+2- getArtist
+	GET http://localhost:8080:artists/1
+	
+3- getAllArtists
+	GET http://localhost:8080:artists
+	
+4- 	updateArtist
+	PUT http://localhost:8080:artists/1
+	{"id": 1, "name": "artist - 1 Modified"}
+
+5- 	deleteArtist
+	DELETE http://localhost:8080:artists/1
+
+---------------------------------------------------------
+Album Resource CRUD Operations:
+===============================
+
+1- createAlbum
+	POST http://localhost:8080:artists/1/albums
+	{"id": 2, "name": "album-1 or Artist-1 ", "yearReleased" : 2017}
+	
+2- getAlbum
+	GET http://localhost:8080:artists/1/albums/2
+	
+3- getAllAlbums
+	GET http://localhost:8080:artists/1/albums
+	
+4- 	updateAlbum
+	PUT http://localhost:8080:artists/1/albums/2
+	{"id": 2, "name": "album-1 or Artist-1 Modified", "yearReleased" : 2015}
+
+5- 	deleteAlbum
+	DELETE http://localhost:8080:artists/1/albums/2
+
+---------------------------------------------------------
+Song Resource CRUD Operations:
+===============================
+
+1- createSong
+	POST http://localhost:8080:artists/1/albums/2/songs
+	{"id": 3, "name": "Song-1 ", "track" : 3}
+	
+2- getSong
+	GET http://localhost:8080:artists/1/albums/2/songs/3
+	
+3- getAllSongs
+	GET http://localhost:8080:artists/1/albums/2/songs
+	
+4- 	updateSong
+	PUT http://localhost:8080:artists/1/albums/2/songs/3
+	{"id": 3, "name": "Song-1-Modified!", "track" : 5}
+
+5- 	deleteSong
+	DELETE http://localhost:8080:artists/1/albums/2/songs/3
