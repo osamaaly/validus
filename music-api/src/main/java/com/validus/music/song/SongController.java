@@ -31,7 +31,7 @@ public class SongController {
 	}
 
 	@PostMapping("artists/{artistId}/albums/{albumId}/songs")
-	public void addSong (@RequestBody Song song, @PathVariable Long artistId, @PathVariable Long albumId) {
+	public void createSong (@RequestBody Song song, @PathVariable Long artistId, @PathVariable Long albumId) {
 		song.setAlbum(new Album(albumId, null, null, "", 0, new Artist(artistId, null, null, "")));
 		songService.addSong(song);
 	}

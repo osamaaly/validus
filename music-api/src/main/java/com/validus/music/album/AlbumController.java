@@ -30,7 +30,7 @@ public class AlbumController {
 	}
 
 	@PostMapping("artists/{artistId}/albums")
-	public void addAlbum (@RequestBody Album album, @PathVariable Long artistId) {
+	public void createAlbum (@RequestBody Album album, @PathVariable Long artistId) {
 		album.setArtist(new Artist(artistId, null, null, ""));
 		albumService.addAlbum(album);
 	}

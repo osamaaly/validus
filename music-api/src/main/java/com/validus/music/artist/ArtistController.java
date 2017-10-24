@@ -26,7 +26,7 @@ public class ArtistController {
 	}
 
 	@RequestMapping(method=RequestMethod.POST, value="/artists")
-	public void addArtist (@RequestBody Artist artist) {
+	public void createArtist (@RequestBody Artist artist) {
 		artistService.addArtist(artist);
 	}
 	
