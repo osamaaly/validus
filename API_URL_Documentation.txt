@@ -60,3 +60,12 @@ Song Resource CRUD Operations:
 
 5- deleteSong
 	DELETE http://localhost:8080:artists/1/albums/2/songs/3
+
+------------------------------------------------------------
+Note:
+=====
+1- created and lastModified dates are not included in the request body as input.
+They but are included in the response body of the GET method as they are updated
+by the API.
+
+Postman has been used to as REST client to test the developed API.
