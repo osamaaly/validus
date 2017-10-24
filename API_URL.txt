@@ -12,11 +12,11 @@ Artist Resource CRUD Operations:
 3- getAllArtists
 	GET http://localhost:8080:artists
 	
-4- 	updateArtist
+4- updateArtist
 	PUT http://localhost:8080:artists/1
 	{"id": 1, "name": "artist - 1 Modified"}
 
-5- 	deleteArtist
+5- deleteArtist
 	DELETE http://localhost:8080:artists/1
 
 ---------------------------------------------------------
@@ -33,11 +33,11 @@ Album Resource CRUD Operations:
 3- getAllAlbums
 	GET http://localhost:8080:artists/1/albums
 	
-4- 	updateAlbum
+4- updateAlbum
 	PUT http://localhost:8080:artists/1/albums/2
 	{"id": 2, "name": "album-1 or Artist-1 Modified", "yearReleased" : 2015}
 
-5- 	deleteAlbum
+5- deleteAlbum
 	DELETE http://localhost:8080:artists/1/albums/2
 
 ---------------------------------------------------------
@@ -54,9 +54,9 @@ Song Resource CRUD Operations:
 3- getAllSongs
 	GET http://localhost:8080:artists/1/albums/2/songs
 	
-4- 	updateSong
+4- updateSong
 	PUT http://localhost:8080:artists/1/albums/2/songs/3
 	{"id": 3, "name": "Song-1-Modified!", "track" : 5}
 
-5- 	deleteSong
+5- deleteSong
 	DELETE http://localhost:8080:artists/1/albums/2/songs/3
