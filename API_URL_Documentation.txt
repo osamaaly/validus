@@ -65,7 +65,7 @@ Song Resource CRUD Operations:
 Note:
 =====
 1- created and lastModified dates are not included in the request body as input.
-They but are included in the response body of the GET method as they are updated
+They are included in the response body of the GET method as they are set and maintained
 by the API.
 
 2- Postman has been used to as REST client to test the developed API.
